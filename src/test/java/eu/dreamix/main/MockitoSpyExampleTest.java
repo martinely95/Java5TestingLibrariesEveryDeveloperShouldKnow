@@ -1,25 +1,25 @@
 package eu.dreamix.main;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
 
-class MockitoSpyExampleTest {
+public class MockitoSpyExampleTest {
     @Test
-    void highFive_shouldHave10Fingers_whenMockitoSpyExampleResult_isAltered() {
+    public void high_shouldHaveDifferentFingers_whenMockitoSpyExampleResult_isAltered() {
         // given
-        int expectedTen = 10;
+        int expectedFingers = 10;
         MockitoSpyExample objectUnderTest = spy(new MockitoSpyExample());
         when(objectUnderTest.getFingers(any(Integer.class)))
-                .thenReturn(expectedTen);
+                .thenReturn(expectedFingers);
 
         // when
-        int received10Fingers = objectUnderTest.high(5);
+        int receivedFingers = objectUnderTest.high(5);
 
         // then
-        assertEquals(expectedTen, received10Fingers);
+        assertEquals(expectedFingers, receivedFingers);
     }
 }

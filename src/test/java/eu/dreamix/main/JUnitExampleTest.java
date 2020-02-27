@@ -1,12 +1,12 @@
 package eu.dreamix.main;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
-class JUnitExampleTest {
+public class JUnitExampleTest {
     @Test
-    void multiply_shouldReturn10_whenA_is2() {
+    public void multiply_shouldReturnWrongResult_whenMultiplicand_isCorrect() {
         // given
         JUnitExample objectUnderTest = new JUnitExample();
 

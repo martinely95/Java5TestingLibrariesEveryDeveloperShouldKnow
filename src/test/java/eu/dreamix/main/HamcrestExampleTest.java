@@ -1,13 +1,13 @@
 package eu.dreamix.main;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-class HamcrestExampleTest {
+public class HamcrestExampleTest {
     @Test
-    void makeMillions_shouldNotBecomeNegative_whenPositiveValue_isPassed() {
+    public void makeMillions_shouldNotBecomeNegative_whenPositiveValue_isPassed() {
         // given
         HamcrestExample objectUnderTest = new HamcrestExample();
 
